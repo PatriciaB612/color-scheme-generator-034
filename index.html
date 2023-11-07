@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Color Scheme Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="color-picker">
+          <input
+            type="color"
+            title="color-picker"
+            value="#f55a5a"
+            id="color-picker"
+          />
+        </div>
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">Monochrome</span>
+            <div class="caret">
+              <img src="icons/caret-Icon.png" alt="caret" />
+            </div>
+          </div>
+          <ul class="menu">
+            <li class="active">
+              Monochrome<img
+                class="checkmark checked"
+                src="icons/checkmark-Icon.png"
+                alt="checked-Icon"
+              />
+            </li>
+            <li>
+              Monochrome-dark<img
+                class="checkmark"
+                src="icons/checkmark-Icon.png"
+                alt="checked-Icon"
+              />
+            </li>
+            <li>
+              Monochrome-light<img
+                class="checkmark"
+                src="icons/checkmark-Icon.png"
+                alt="checked-Icon"
+              />
+            </li>
+            <li>
+              Analogic<img
+                class="checkmark"
+                src="icons/checkmark-Icon.png"
+                alt="checked-Icon"
+              />
+            </li>
+            <li>
+              Complement<img
+                class="checkmark"
+                src="icons/checkmark-Icon.png"
+                alt="checked-Icon"
+              />
+            </li>
+            <li>
+              Analogic-complement<img
+                class="checkmark"
+                src="icons/checkmark-Icon.png"
+                alt="checked-Icon"
+              />
+            </li>
+            <li>
+              Triad<img
+                class="checkmark"
+                src="icons/checkmark-Icon.png"
+                alt="checked-Icon"
+              />
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button type="button" class="color-scheme-btn">
+            Get color scheme
+          </button>
+        </div>
+      </div>
+      <div class="colors">
+        <div class="color color1"></div>
+        <div class="color color2"></div>
+        <div class="color color3"></div>
+        <div class="color color4"></div>
+        <div class="color color5"></div>
+      </div>
+      <div class="hex-footer">
+        <div class="hex-number"><p>#F55A5A</p></div>
+        <div class="hex-number"><p>#2B283A</p></div>
+        <div class="hex-number"><p>#FBF3AB</p></div>
+        <div class="hex-number"><p>#AAD1B6</p></div>
+        <div class="hex-number"><p>#A626D3</p></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

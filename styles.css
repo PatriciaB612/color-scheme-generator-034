@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1c1c;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  width: 550px;
+  border-radius: 10px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  padding: 0 0.5em;
+}
+
+.color-picker input {
+  width: 61px;
+  height: 42px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+button,
+.select,
+.menu {
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05),
+    0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+button {
+  height: 42px;
+  transition: 0.1s;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.select {
+  width: 312px;
+  height: 42px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.3s;
+}
+
+.caret {
+  transition: 0.3s;
+}
+
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+.menu {
+  list-style: none;
+  width: 312px;
+  height: 287px;
+  padding: 4px 0px;
+  position: absolute;
+  top: 28px;
+  display: none;
+  transition: 0.3s;
+}
+
+.menu li {
+  line-height: 24px;
+  display: flex;
+  padding: 8px 16px 8px 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu li:hover,
+.menu li:focus {
+  font-weight: 600;
+}
+
+.active {
+  font-weight: 600;
+}
+
+.checkmark {
+  display: none;
+}
+
+.checked {
+  display: block;
+}
+
+.menu-open {
+  display: block;
+}
+
+.colors {
+  height: 414px;
+  display: flex;
+}
+
+.color,
+.hex-number {
+  width: 110px;
+}
+
+.color1 {
+  background-color: #f55a5a;
+}
+
+.color2 {
+  background-color: #2b283a;
+}
+
+.color3 {
+  background-color: #fbf3ab;
+}
+
+.color4 {
+  background-color: #aad1b6;
+}
+
+.color5 {
+  background-color: #a626d3;
+}
+
+.hex-footer {
+  height: 46px;
+  display: flex;
+}
+
+.hex-number {
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 500;
+}
