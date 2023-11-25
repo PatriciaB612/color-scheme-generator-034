@@ -36,10 +36,10 @@ const hexNumbers = document.querySelectorAll('.hex-number')
 getColorSchemeBtn.addEventListener('click', () => {
   const hexNumber = colorPicked.value.replace('#', '')
   const selectedScheme = selectEl.innerText.toLowerCase()
-  const baseUrl = 'https://www.thecolorapi.com/'
-  let finalUrl = `${baseUrl}scheme?hex=${hexNumber}&mode=${selectedScheme}&count=5`
 
-  fetch(finalUrl)
+  fetch(
+    `https://www.thecolorapi.com/scheme?hex=${hexNumber}&mode=${selectedScheme}&count=5`
+  )
     .then((res) => res.json())
     .then((data) => {
       colorsArray = data.colors
